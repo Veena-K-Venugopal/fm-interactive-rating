@@ -15,31 +15,84 @@ body {
     background-color: var(--very-dark-blue);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid red;
-    border-radius: 30px;
+main {
+    max-width: 327px;
+    margin: 154px 24px;
+    height: 100%;
+    border-radius: 15px;
+    /* border: 1px solid yellow; */
     background: linear-gradient(#232a34 0%, #232a34 100%, #181E27 100%);
 }
 
+.rating-card {
+    margin: auto 24px;
+}
+
+.svg-wrapper {
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    border-radius: 50%;
+    border: 1px solid;
+    background-color: #181E27;
+}
+
 h1 {
+    margin-top: 16px;
     color: white;
     font-size: 1.75rem;
     font-weight: 700;
 }
 
 p {
+    margin-top: 10px;
     color: var(--light-grey);
     line-height: 1.5rem;
 }
 
+form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.rating-wrapper {
+    /* border: 1px solid green; */
+    display: flex;
+    /* width: 80%; */
+    width: 282px;
+    justify-content: space-between;
+}
+
+input[type="button"] {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: var(--light-grey);
+    background-color: var(--dark-blue);
+    border: none;
+}
+
 .submit {
+    margin-bottom: 32px;
     background-color: var(--orange);
     border-radius: 22.5px;
     border-color: var(--orange);
     text-transform: uppercase;
     padding: 0.9rem;
-    width: 80%;
+    /* width: 80%; */
+    width: 279px;
+}
+
+/* Thank You card styles */
+
+.thankyou-card {
+    display: none;
 }
